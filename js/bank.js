@@ -44,18 +44,7 @@ function updateTotal(totalId ,amount){
     const newTotal = total + amount ;
     document.getElementById(totalId).innerText = newTotal;
 }
-// get balance total
-/* function updateBalanceTotal(amount , isAdding){
-    const balanceTotal = getInnerTextValue('balance-total');
-    let newBalanceTotal;
-        if (isAdding){
-            newBalanceTotal = balanceTotal + amount;
-        }
-        else {
-             newBalanceTotal = balanceTotal  - amount
-        }
-        document.getElementById('balance-total').innerText = newBalanceTotal;
-} */
+// update balance total
 function updateBalanceTotal(){
     const depositTotal = getInnerTextValue('deposit-total');
     const withdrawTotal = getInnerTextValue('withdraw-total');
